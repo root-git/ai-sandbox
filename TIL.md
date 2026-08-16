@@ -1,0 +1,1 @@
+- **Pytest**: Set up automated test discovery with uv and pytest in tests/test_schemas.py.

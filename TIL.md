@@ -1,1 +1,2 @@
 - **Pytest**: Set up automated test discovery with uv and pytest in tests/test_schemas.py.
+- **Pydantic**: Implemented 3-level nested schemas (UserProfile, ModelConfig, AIRequest) with model_validator and EmailStr in src/ai_sandbox/schemas.py.

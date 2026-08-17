@@ -1,2 +1,3 @@
 - **Pytest**: Set up automated test discovery with uv and pytest in tests/test_schemas.py.
 - **Pydantic**: Implemented 3-level nested schemas (UserProfile, ModelConfig, AIRequest) with model_validator and EmailStr in src/ai_sandbox/schemas.py.
+- **Pydantic Validation Wrapper**: Safely parse JSON strings using `model_validate_json` inside a `ValidationError` block to prevent application runtime crashes.

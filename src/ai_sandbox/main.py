@@ -1,5 +1,11 @@
 from ai_sandbox.schemas import AIRequest, ModelConfig, UserProfile
+from fastapi import FastAPI
 
+app = FastAPI()
+
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
 
 def run_demo():
     print("--- 1. Creating a Valid AI Request ---")
@@ -20,7 +26,6 @@ def run_demo():
     print(f"User Email: {request_obj.user.email}")
     print(f"Model Name: {request_obj.config.model_name}")
     print(f"Is Premium: {request_obj.user.is_premium}")
-
 
 if __name__ == "__main__":
     run_demo()

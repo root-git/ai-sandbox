@@ -2,3 +2,4 @@
 - **Pydantic**: Implemented 3-level nested schemas (UserProfile, ModelConfig, AIRequest) with model_validator and EmailStr in src/ai_sandbox/schemas.py.
 - **Pydantic Validation Wrapper**: Safely parse JSON strings using `model_validate_json` inside a `ValidationError` block to prevent application runtime crashes.
 - **FastAPI & Uvicorn Shell**: Spun up an ASGI server shell with a `/health` endpoint and verified endpoint execution.
+ - **Python Documentation & httpx**: Use docstrings for function contracts and inline comments for async control flow ('async with' context management and 'await' yield execution).

@@ -3,3 +3,4 @@
 - **Pydantic Validation Wrapper**: Safely parse JSON strings using `model_validate_json` inside a `ValidationError` block to prevent application runtime crashes.
 - **FastAPI & Uvicorn Shell**: Spun up an ASGI server shell with a `/health` endpoint and verified endpoint execution.
  - **Python Documentation & httpx**: Use docstrings for function contracts and inline comments for async control flow ('async with' context management and 'await' yield execution).
+- **asyncio.gather Concurrent Execution**: Concurrent I/O calls require passing unpacked coroutine tasks (*tasks) to asyncio.gather to resolve multiple futures into a list of results simultaneously.

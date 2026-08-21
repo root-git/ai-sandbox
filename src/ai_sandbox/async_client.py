@@ -1,6 +1,7 @@
 import asyncio
 import httpx
 
+
 async def fetch_data(url: str) -> dict:
     """Fetch a JSON payload asynchronously from the given URL.
     

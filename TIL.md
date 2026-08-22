@@ -5,3 +5,4 @@
  - **Python Documentation & httpx**: Use docstrings for function contracts and inline comments for async control flow ('async with' context management and 'await' yield execution).
 - **asyncio.gather Concurrent Execution**: Concurrent I/O calls require passing unpacked coroutine tasks (*tasks) to asyncio.gather to resolve multiple futures into a list of results simultaneously.
  - **API Wrapper Pattern**: Encapsulate SDK client initialization to separate connection concerns and credentials from business logic.
+- **LLM Metadata & Telemetry**: Extracted execution latency, prompt/completion token usage, and dynamic cost metrics into a validated Pydantic schema.

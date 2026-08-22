@@ -6,3 +6,4 @@
 - **asyncio.gather Concurrent Execution**: Concurrent I/O calls require passing unpacked coroutine tasks (*tasks) to asyncio.gather to resolve multiple futures into a list of results simultaneously.
  - **API Wrapper Pattern**: Encapsulate SDK client initialization to separate connection concerns and credentials from business logic.
 - **LLM Metadata & Telemetry**: Extracted execution latency, prompt/completion token usage, and dynamic cost metrics into a validated Pydantic schema.
+- **Dynamic Prompt Formatting**: Injected runtime keyword arguments into prompt templates using dict unpacking ()

@@ -1,20 +1,20 @@
-2026-08-22 15:14:17 [    INFO] HTTP Request: GET https://api.example.com/item/0 "HTTP/1.1 200 OK" (_client.py:1740)
-2026-08-22 15:14:17 [    INFO] HTTP Request: GET https://api.example.com/item/1 "HTTP/1.1 200 OK" (_client.py:1740)
-2026-08-22 15:14:17 [    INFO] HTTP Request: GET https://api.example.com/item/2 "HTTP/1.1 200 OK" (_client.py:1740)
-2026-08-22 15:14:17 [    INFO] HTTP Request: GET https://api.example.com/item/3 "HTTP/1.1 200 OK" (_client.py:1740)
-2026-08-22 15:14:17 [    INFO] HTTP Request: GET https://api.example.com/item/4 "HTTP/1.1 200 OK" (_client.py:1740)
-2026-08-22 15:14:17 [   ERROR] JSON validation failed: 1 validation error for SampleModel
+2026-08-23 13:52:43 [    INFO] HTTP Request: GET https://api.example.com/item/0 "HTTP/1.1 200 OK" (_client.py:1740)
+2026-08-23 13:52:43 [    INFO] HTTP Request: GET https://api.example.com/item/1 "HTTP/1.1 200 OK" (_client.py:1740)
+2026-08-23 13:52:43 [    INFO] HTTP Request: GET https://api.example.com/item/2 "HTTP/1.1 200 OK" (_client.py:1740)
+2026-08-23 13:52:43 [    INFO] HTTP Request: GET https://api.example.com/item/3 "HTTP/1.1 200 OK" (_client.py:1740)
+2026-08-23 13:52:43 [    INFO] HTTP Request: GET https://api.example.com/item/4 "HTTP/1.1 200 OK" (_client.py:1740)
+2026-08-23 13:52:43 [   ERROR] JSON validation failed: 1 validation error for SampleModel
 id
   Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='not_a_number', input_type=str]
     For further information visit https://errors.pydantic.dev/2.13/v/int_parsing (json_parser.py:10)
-2026-08-22 15:14:17 [   ERROR] JSON validation failed: 1 validation error for SampleModel
+2026-08-23 13:52:43 [   ERROR] JSON validation failed: 1 validation error for SampleModel
   Invalid JSON: EOF while parsing an object at line 1 column 25 [type=json_invalid, input_value='{"id": 1, "name": "Alice"', input_type=str]
     For further information visit https://errors.pydantic.dev/2.13/v/json_invalid (json_parser.py:10)
-2026-08-22 15:14:17 [   ERROR] JSON validation failed: 2 validation errors for SampleModel
+2026-08-23 13:52:43 [   ERROR] JSON validation failed: 2 validation errors for SampleModel
 id
   Input should be a valid integer, unable to parse string as an integer [type=int_parsing, input_value='invalid', input_type=str]
     For further information visit https://errors.pydantic.dev/2.13/v/int_parsing
 name
   Field required [type=missing, input_value={'id': 'invalid'}, input_type=dict]
     For further information visit https://errors.pydantic.dev/2.13/v/missing (json_parser.py:10)
-2026-08-22 15:14:17 [    INFO] HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK" (_client.py:1085)
+2026-08-23 13:52:43 [    INFO] HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK" (_client.py:1085)

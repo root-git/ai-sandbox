@@ -7,3 +7,4 @@
  - **API Wrapper Pattern**: Encapsulate SDK client initialization to separate connection concerns and credentials from business logic.
 - **LLM Metadata & Telemetry**: Extracted execution latency, prompt/completion token usage, and dynamic cost metrics into a validated Pydantic schema.
 - **Dynamic Prompt Formatting**: Injected runtime keyword arguments into prompt templates using dict unpacking ()
+- **OpenAI Pydantic Tool Schemas**: Converted Pydantic models into OpenAI-compatible tool specification using `openai.pydantic_function_tool`

@@ -9,3 +9,4 @@
 - **Dynamic Prompt Formatting**: Injected runtime keyword arguments into prompt templates using dict unpacking ()
 - **OpenAI Pydantic Tool Schemas**: Converted Pydantic models into OpenAI-compatible tool specification using `openai.pydantic_function_tool`
 - **Tool Execution Loop**: Implemented dispatch logic to parse model JSON arguments and invoke locak Python functions dynamically
+- **OpenAI Structured Outputs & Mocking**: Enforced strict Pydantic parsing with  and mocked nested dynamic response using explicit lists for indexed mock access

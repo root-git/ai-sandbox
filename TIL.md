@@ -10,3 +10,4 @@
 - **OpenAI Pydantic Tool Schemas**: Converted Pydantic models into OpenAI-compatible tool specification using `openai.pydantic_function_tool`
 - **Tool Execution Loop**: Implemented dispatch logic to parse model JSON arguments and invoke locak Python functions dynamically
 - **OpenAI Structured Outputs & Mocking**: Enforced strict Pydantic parsing with  and mocked nested dynamic response using explicit lists for indexed mock access
+- **pgvector Containerization**: Set up pgvector/pgvect:pg16 container service with named volumn persistence and verified TCP port connectivity via Python sockets.

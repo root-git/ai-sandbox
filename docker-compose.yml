@@ -1,0 +1,24 @@
+# File: docker-compose.yml
+# Specify the Compose file specification version
+services:
+  # Define the PostgreSQL database service container
+  db:
+    # Set the official pgvector image built on PostgreSQL 16
+    image: pgvector/pgvector:pg16
+    # Configure container environment variables
+    environment:
+      # Pass the default PostgreSQL superuser password
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+    # Forward port requests from host to container
+    ports:
+      # Bind host port 5432 to container port 5432
+      - "5432:5432"
+    # Mount persistent data storage paths
+    volumes:
+      # Link named volume pgdata to PostgreSQL data directory
+      - pgdata:/var/lib/postgresql/data
+
+# Define top-level named volumes for state retention across container restarts
+volumes:
+  # Declare the named volume used by the db service
+  pgdata:

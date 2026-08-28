@@ -5,6 +5,7 @@ venv/
 
 # Environment / Secret Variables
 .env
+.env.*
 
 # Python Caches
 __pycache__/

@@ -13,3 +13,4 @@
 - **pgvector Containerization**: Set up pgvector/pgvect:pg16 container service with named volumn persistence and verified TCP port connectivity via Python sockets.
 - **Recursive Text Chunking**: Implemented double-newline splitting with overlap context retention to optimize embedding density
 - **OpenAI Embeddings & Pytest Mocking**: Generated text embeddings using text-embedding-3-small and mocked nested client calls using MagicMock
+- **Dense Vector Search**: Compute cosine similarity using NumPy matrix dot products and L2 norms

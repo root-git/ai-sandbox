@@ -14,3 +14,4 @@
 - **Recursive Text Chunking**: Implemented double-newline splitting with overlap context retention to optimize embedding density
 - **OpenAI Embeddings & Pytest Mocking**: Generated text embeddings using text-embedding-3-small and mocked nested client calls using MagicMock
 - **Dense Vector Search**: Compute cosine similarity using NumPy matrix dot products and L2 norms
+- **Sparse BM25 Search**: Implemented keyword ranking using  with whitespace tokenization for candidate retrieval

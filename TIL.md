@@ -17,3 +17,4 @@
 - **Sparse BM25 Search**: Implemented keyword ranking using  with whitespace tokenization for candidate retrieval
 - **Reciprocal Rank Fusion**: Merged heterogeneous vect and BM25 candidate lists using position-based rank decay without raw score normalization
 - **Cross-Encoder Reranking**: Re-scored top 20 retrieved vector chunks using BAAI/bge-reranker-base cross-attention to output top 5 high-precision candidates
+- **Context Windoe Bonds Manager**: Enforced token constraints using tiktoken BPE encoding before LLM API execution

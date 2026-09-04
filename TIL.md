@@ -18,3 +18,4 @@
 - **Reciprocal Rank Fusion**: Merged heterogeneous vect and BM25 candidate lists using position-based rank decay without raw score normalization
 - **Cross-Encoder Reranking**: Re-scored top 20 retrieved vector chunks using BAAI/bge-reranker-base cross-attention to output top 5 high-precision candidates
 - **Context Windoe Bonds Manager**: Enforced token constraints using tiktoken BPE encoding before LLM API execution
+- **Grounded Context Injection**: Restricted model response domain exclusively to retrieved context chunks to eliminate hallucinations

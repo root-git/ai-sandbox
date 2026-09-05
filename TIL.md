@@ -20,3 +20,4 @@
 - **Context Windoe Bonds Manager**: Enforced token constraints using tiktoken BPE encoding before LLM API execution
 - **Grounded Context Injection**: Restricted model response domain exclusively to retrieved context chunks to eliminate hallucinations
 - **LangGraph State Graph Architectire**: Define centralized GraphState using TypedDict and Annotated list reducers to manage query history, documents, and generation steps
+-**Fallback Routing Logic**: Implemented conditional graph routing bsed on reranker score thresholds using safe collection evaluation

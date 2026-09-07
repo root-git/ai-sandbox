@@ -22,3 +22,4 @@
 - **LangGraph State Graph Architectire**: Define centralized GraphState using TypedDict and Annotated list reducers to manage query history, documents, and generation steps
 -**Fallback Routing Logic**: Implemented conditional graph routing bsed on reranker score thresholds using safe collection evaluation
 - **Dataset Evaluation Baseline**: Created structured test cases for deterministic evaluation and regression tracking.
+- **Ragas Triad Evaluation & Module Patching**: Configured Faithfulness, Answer Relevance, and Context Precision metrics using  monkey=patching to bypass Python 3.14 import breaks in third-party dependencies.

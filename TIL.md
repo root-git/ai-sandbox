@@ -23,3 +23,4 @@
 -**Fallback Routing Logic**: Implemented conditional graph routing bsed on reranker score thresholds using safe collection evaluation
 - **Dataset Evaluation Baseline**: Created structured test cases for deterministic evaluation and regression tracking.
 - **Ragas Triad Evaluation & Module Patching**: Configured Faithfulness, Answer Relevance, and Context Precision metrics using  monkey=patching to bypass Python 3.14 import breaks in third-party dependencies.
+- **Ragas Defeered Imports & sys.modules Mocking**: Defer thrid-party evaluation imports inside functions and mock `sys.modules["ragas"]`.evaluate return values with explicit dictionaries to bypass dependency crashes and run pytest.

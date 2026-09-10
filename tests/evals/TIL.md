@@ -1,0 +1,1 @@
+- **pytest Evals**: Integrated model output quality checks via standard pytest assertions runner.py and test_evals.py

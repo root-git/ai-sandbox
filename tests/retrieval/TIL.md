@@ -1,0 +1,1 @@
+- **Chunking & Retrieval Benchmakring**: Empirical testing across 250, 500, and 1000 token chunk sizes identifies the optimal context preservation vs. recall trade-off.

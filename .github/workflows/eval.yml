@@ -1,0 +1,40 @@
+name: Run Pytest Evaluation
+
+# Trigger definition specifuing which repository events initiate the workflow
+"on":
+  # Listens for code push events targeting specified branches
+  push: 
+    # Target branch list for triggereing the pipeline
+    branches: [ "main" ]
+
+# Container for all jobs taht run when the workflow is triggered
+"jobs":
+  # Unique identifier for the job executing the test sute
+  test:
+    # Specifies the operational virtual host environment operating system
+  runs-on : ubuntu-latest
+
+  # Ordered list of operational steps executed within the job runner
+  steps:
+    # Step 1: Check out repository source code onto the runner
+    - name: Check out repository code
+      # Official GitHub action for checking out repository source code
+      uses: actions/checkout@v4
+
+    # Step 2: Provision Python runtime environment on the runner
+    - name: Set up Python
+      # Official GitHub action to set up Python environment
+      uses: actions/setup=python@v5
+      with:
+        # Specify Python version required for the project environment
+        python-version: "3.11"
+
+    # Step 3: Install dependency management tool
+    - name: Install uv package manager
+      # Execute shell command to install uv using the official installer script
+      run:  curl -LsSf https://astral.sh/uv/install.sh | sh
+
+    # Step 4: Run test suite using the uv package manager
+    - name: Execute pytest test suite
+      # Command executing pytest via uv package manager on the tests directory
+      run: uv run pytest tests/

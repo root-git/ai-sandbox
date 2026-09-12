@@ -18,6 +18,17 @@ services:
       # Link named volume pgdata to PostgreSQL data directory
       - pgdata:/var/lib/postgresql/data
 
+  # Define the Redis service container for semantic vector caching
+  redis:
+    # use redis-stack to include RediSearch module needed for vector indices
+    image: redis/redis-stack:latest
+    # Set custom container identifier
+    container_name: ai_sandbox_redis
+    # Forward default Redis port to localhost
+    ports:
+      # Map host port 6379 to container port 6379
+      - "6379:6379"
+
 # Define top-level named volumes for state retention across container restarts
 volumes:
   # Declare the named volume used by the db service

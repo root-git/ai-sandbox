@@ -25,3 +25,4 @@
 - **Ragas Triad Evaluation & Module Patching**: Configured Faithfulness, Answer Relevance, and Context Precision metrics using  monkey=patching to bypass Python 3.14 import breaks in third-party dependencies.
 - **Ragas Defeered Imports & sys.modules Mocking**: Defer thrid-party evaluation imports inside functions and mock `sys.modules["ragas"]`.evaluate return values with explicit dictionaries to bypass dependency crashes and run pytest.
 - **GitHub Actions CI/CD Pipeline**: COnfigured  to trigger pytest automatically on repository pushes, handling PyYAML key type coercion
+-**Semantic Redis Cache**: Implemented vector simliarity search with HNSW index in Redis to return cached responses when cosine distance < 0.10. 

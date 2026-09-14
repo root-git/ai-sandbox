@@ -8,3 +8,9 @@ def setup_tracing() -> None:
 
     # Instrument the OpenAI client SDK to automatically expore telemetry spans to the active Phoenix session
     OpenAIInstrumentor().instrument()
+
+if __name__ == "__main__":
+    setup_tracing()
+
+    # Keep the script running so the background thread stays alive for your browser dashboard
+    input("Phoenix dashboard is running. Press Enter to stop...\n")

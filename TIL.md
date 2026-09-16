@@ -27,3 +27,4 @@
 - **GitHub Actions CI/CD Pipeline**: COnfigured  to trigger pytest automatically on repository pushes, handling PyYAML key type coercion
 -**Semantic Redis Cache**: Implemented vector simliarity search with HNSW index in Redis to return cached responses when cosine distance < 0.10. 
 = **Observability Tracing**: Configured local Arize Phoenix telemetry tracing and OpenAI auto-instrumentation
+-  **Latency & Cost Optimiziation**: Measure TTFT and total execution time deltas between cache hits and misses for production LLM performance
